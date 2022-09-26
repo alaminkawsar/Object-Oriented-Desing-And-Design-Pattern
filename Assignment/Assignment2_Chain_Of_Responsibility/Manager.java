@@ -5,6 +5,6 @@ public class Manager extends AccountHandler{
     }
     @Override
     protected void write(String message){
-        System.out.println("Athorized From Manager");
+        System.out.println(message+ " From Manager");
     }
 }

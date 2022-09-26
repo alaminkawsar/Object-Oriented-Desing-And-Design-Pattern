@@ -17,7 +17,13 @@ public class AuthorizationChain {
         // Suppose account have balance 10^8, so 10^9 will not transaction
 
         AccountHandler accountHandler = getChainHandler();
-        return accountHandler.logMessage(account, amount);
+        if(account.balance<amount){
+            System.out.println(amount+"/- Transaction Can't possible\nYou have Not Sufficeint Balance.\nYour Account Balance is: "+account.balance+"/-");
+            return false;
+        }
+        accountHandler.logMessage(account, amount);
+
+        return true;
 
     }
 }

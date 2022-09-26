@@ -5,6 +5,6 @@ public class Cashier extends AccountHandler{
     }
     @Override
     protected void write(String message){
-        System.out.println("Athorized From Cashier: "+message);
+        System.out.println(message+" From Cashier");
     }
 }

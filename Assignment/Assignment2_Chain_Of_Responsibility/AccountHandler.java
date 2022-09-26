@@ -13,28 +13,29 @@ public abstract class AccountHandler {
         this.nextHandler = nextHandler;
     }
 
-    public boolean logMessage(Account account,int amount){
-        if(account.balance<amount){
-            return false;
-        }
+    public void logMessage(Account account,int amount){
+
         if(amount<=LEVEL1){
             write(authorizedMessage);
-        }else if(amount<=LEVEL2){
-            if(this.amount<LEVEL2){
-                return nextHandler.logMessage(account, amount);
-            }
+        }
+        else if(amount<=LEVEL2){
             write(authorizedMessage);
-        }else{
             if(this.amount<LEVEL2){
-                return nextHandler.logMessage(account, amount);
+                nextHandler.logMessage(account, amount);
+            }
+            //write(authorizedMessage);
+        }
+        else{
+            if(this.amount<LEVEL2){
+                nextHandler.logMessage(account, amount);
             }else{
                 write(authorizedMessage);
                 if(nextHandler!=null){
-                    return nextHandler.logMessage(account, amount);
+                    nextHandler.logMessage(account, amount);
                 }
+                // write(authorizedMessage);
             }
         }
-        return true;
     }
 
     abstract protected void write(String message);
