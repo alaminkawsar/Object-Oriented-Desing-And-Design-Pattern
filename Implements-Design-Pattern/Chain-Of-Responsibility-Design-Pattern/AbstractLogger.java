@@ -15,7 +15,7 @@ public abstract class AbstractLogger {
     public void logMessage(int level, String message) {
         if(level<=1){
             write(message);
-        }if(level<=2){
+        }else if(level<=2){
             write(message);
             if(this.level<2) nexLogger.logMessage(level, message);
         }else if(level<=3){
