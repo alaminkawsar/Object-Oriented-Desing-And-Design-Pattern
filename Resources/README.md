@@ -1,0 +1,1 @@
+[loose Coupling vs Tight Coupling](https://www.upgrad.com/blog/loose-coupling-vs-tight-coupling-in-java/#:~:text=Loose%20coupling%20in%20Java%20means,as%20a%20loose%20coupling%20situation.)
