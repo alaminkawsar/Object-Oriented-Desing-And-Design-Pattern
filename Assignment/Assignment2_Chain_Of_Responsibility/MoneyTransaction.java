@@ -34,7 +34,7 @@ public class MoneyTransaction {
         }
         System.out.println();
 
-        /*Fourth Transaction, This Transaction Can't possible Because more than ammount */
+        /*Fourth Transaction, This Transaction Can't possible Because more than amount */
         amount = 100000000;
         isAuthorized = authorizationChain.authorizeWithdrawal(account, amount);
         if(isAuthorized){

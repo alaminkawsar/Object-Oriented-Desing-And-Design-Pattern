@@ -1,4 +1,4 @@
-public class Student {
+public class Student extends Semester{
     private String registrationNo;
     private String Name;
 
