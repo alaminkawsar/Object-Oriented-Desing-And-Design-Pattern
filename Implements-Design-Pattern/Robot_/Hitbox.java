@@ -1,4 +1,3 @@
-// Hitbox for a sprite, defining a rectangular area on the canvas. Essentially a rectangle.
 public class Hitbox {
 
     // coordinates of top-left corner

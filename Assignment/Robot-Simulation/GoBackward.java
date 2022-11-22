@@ -1,7 +1,7 @@
-public class GoBakcward implements Command {
+public class GoBackward implements Command {
     private Robot robot;
 
-    public GoBakcward(Robot robot){
+    public GoBackward(Robot robot){
         this.robot = robot;
     }
 
