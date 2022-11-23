@@ -11,7 +11,7 @@ public class RobotSimulation extends JFrame{
     public RobotSimulation() {
         setSize(new Dimension(800, 800));
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Keyboard Input Demo");
+        setTitle("Robot Simulation");
         setVisible(true);
 
         // init ControllableSquareSprite at (175, 175) with width 100 and color Cyan. Set screen bounds to 800px * 800px
