@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /* Command Design Pattern is Used */
-// 
+
 public class MainDemo {
     public static void main(String[] args) {
         RobotSimulation robotSimulation = new RobotSimulation();
